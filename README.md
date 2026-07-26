@@ -1,14 +1,13 @@
 # First Impression Cleaning Co. Website
 
-## Files
-- `index.html` — website content
-- `style.css` — colors, layout, and responsive styling
-- `script.js` — mobile navigation
-- `assets/logo.svg` — business logo
+Upload these files to your existing GitHub repository:
 
-## Publish on GitHub Pages
-Upload all files and the `assets` folder to the root of the repository. GitHub Pages will automatically use `index.html`.
+- index.html
+- style.css
+- script.js
+- README.md
+- assets folder
 
-Business contact:
-- Phone: (567) 218-1841
-- Email: firstimpressioncleanteam@gmail.com
+In GitHub, choose **Add file → Upload files**, drag everything in, select **Commit directly to the main branch**, and click **Commit changes**.
+
+The contact form opens the visitor's email app and prepares a message to firstimpressioncleanteam@gmail.com.

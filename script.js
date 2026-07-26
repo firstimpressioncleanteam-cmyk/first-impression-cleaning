@@ -1,16 +1,1 @@
-const menuButton = document.querySelector('.menu-toggle');
-const nav = document.querySelector('.site-nav');
-
-if (menuButton && nav) {
-  menuButton.addEventListener('click', () => {
-    const isOpen = nav.classList.toggle('open');
-    menuButton.setAttribute('aria-expanded', String(isOpen));
-  });
-
-  nav.querySelectorAll('a').forEach((link) => {
-    link.addEventListener('click', () => {
-      nav.classList.remove('open');
-      menuButton.setAttribute('aria-expanded', 'false');
-    });
-  });
-}
+const menu=document.querySelector('.menu'),nav=document.querySelector('.nav nav');menu?.addEventListener('click',()=>nav.classList.toggle('open'));nav?.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>nav.classList.remove('open')));document.querySelector('#year').textContent=new Date().getFullYear();document.querySelector('#walkthrough-form')?.addEventListener('submit',e=>{e.preventDefault();const d=new FormData(e.target),s=encodeURIComponent(`Free Walkthrough Request${d.get('company')?` - ${d.get('company')}`:''}`),b=encodeURIComponent(`Hello First Impression Cleaning Co.,\n\nI would like to request a free commercial cleaning walkthrough.\n\nName: ${d.get('name')}\nCompany: ${d.get('company')||'Not provided'}\nPhone: ${d.get('phone')}\nEmail: ${d.get('email')}\nBuilding Type: ${d.get('buildingType')}\nApproximate Square Footage: ${d.get('squareFootage')||'Not provided'}\n\nCleaning Needs:\n${d.get('message')}\n\nThank you.`);location.href=`mailto:firstimpressioncleanteam@gmail.com?subject=${s}&body=${b}`});
