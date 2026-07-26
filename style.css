@@ -112,7 +112,7 @@ a { color: inherit; }
   align-items: center;
   background:
     linear-gradient(90deg, rgba(6,31,48,.92) 0%, rgba(6,31,48,.72) 42%, rgba(6,31,48,.2) 76%, rgba(6,31,48,.12) 100%),
-    url('https://images.pexels.com/photos/3184465/pexels-photo-3184465.jpeg?auto=compress&cs=tinysrgb&w=2000') center/cover no-repeat;
+    url('https://images.unsplash.com/photo-1497366754035-f200968a6e72?auto=format&fit=crop&w=2200&q=85') center/cover no-repeat;
 }
 .hero-video {
   position: absolute;
