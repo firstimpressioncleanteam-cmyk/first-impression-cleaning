@@ -1,1 +1,44 @@
-const menu=document.querySelector('.menu'),nav=document.querySelector('.nav nav');menu?.addEventListener('click',()=>nav.classList.toggle('open'));nav?.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>nav.classList.remove('open')));document.querySelector('#year').textContent=new Date().getFullYear();document.querySelector('#walkthrough-form')?.addEventListener('submit',e=>{e.preventDefault();const d=new FormData(e.target),s=encodeURIComponent(`Free Walkthrough Request${d.get('company')?` - ${d.get('company')}`:''}`),b=encodeURIComponent(`Hello First Impression Cleaning Co.,\n\nI would like to request a free commercial cleaning walkthrough.\n\nName: ${d.get('name')}\nCompany: ${d.get('company')||'Not provided'}\nPhone: ${d.get('phone')}\nEmail: ${d.get('email')}\nBuilding Type: ${d.get('buildingType')}\nApproximate Square Footage: ${d.get('squareFootage')||'Not provided'}\n\nCleaning Needs:\n${d.get('message')}\n\nThank you.`);location.href=`mailto:firstimpressioncleanteam@gmail.com?subject=${s}&body=${b}`});
+const menuButton = document.querySelector('.menu-toggle');
+const nav = document.querySelector('.main-nav');
+
+if (menuButton && nav) {
+  menuButton.addEventListener('click', () => {
+    const isOpen = nav.classList.toggle('open');
+    menuButton.setAttribute('aria-expanded', String(isOpen));
+    menuButton.textContent = isOpen ? '✕' : '☰';
+  });
+
+  nav.querySelectorAll('a').forEach((link) => {
+    link.addEventListener('click', () => {
+      nav.classList.remove('open');
+      menuButton.setAttribute('aria-expanded', 'false');
+      menuButton.textContent = '☰';
+    });
+  });
+}
+
+const year = document.getElementById('year');
+if (year) year.textContent = new Date().getFullYear();
+
+const revealItems = document.querySelectorAll('.reveal');
+if ('IntersectionObserver' in window) {
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach((entry) => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('visible');
+        observer.unobserve(entry.target);
+      }
+    });
+  }, { threshold: 0.12 });
+
+  revealItems.forEach((item) => observer.observe(item));
+} else {
+  revealItems.forEach((item) => item.classList.add('visible'));
+}
+
+const heroVideo = document.querySelector('.hero-video');
+if (heroVideo) {
+  heroVideo.addEventListener('error', () => {
+    heroVideo.style.display = 'none';
+  });
+}
