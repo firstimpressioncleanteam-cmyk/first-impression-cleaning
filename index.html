@@ -1,58 +1,243 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>First Impression Cleaning Co.</title>
-<style>
-body{margin:0;font-family:Arial,sans-serif;background:#f4f7fa;color:#1f2937}
-header{background:#163a63;color:white;padding:60px 20px;text-align:center}
-section{max-width:1000px;margin:auto;padding:40px 20px}
-h2{color:#163a63}
-.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:16px}
-.card{background:white;padding:18px;border-radius:8px;box-shadow:0 2px 6px rgba(0,0,0,.1)}
-.button{display:inline-block;background:#0f766e;color:white;text-decoration:none;padding:12px 22px;border-radius:6px;margin-top:15px}
-footer{background:#163a63;color:white;text-align:center;padding:20px}
-</style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="First Impression Cleaning Co. provides professional commercial cleaning for dealerships, offices, and business facilities in Toledo, Ohio and surrounding areas.">
+  <title>First Impression Cleaning Co. | Commercial Cleaning</title>
+  <link rel="stylesheet" href="style.css">
+  <script defer src="script.js"></script>
 </head>
 <body>
-<header>
-<h1>First Impression Cleaning Co.</h1>
-<p><strong>Because First Impressions Matter.</strong></p>
-<p>Professional Commercial Cleaning Services</p>
-<a class="button" href="tel:+15672181841">Call (567) 218-1841</a>
-</header>
+  <header class="site-header">
+    <div class="container nav-wrap">
+      <a class="brand" href="#top" aria-label="First Impression Cleaning Co. home">
+        <img src="assets/logo.svg" alt="First Impression Cleaning Co. logo" class="logo">
+        <span class="brand-copy">
+          <strong>First Impression Cleaning Co.</strong>
+          <small>Because First Impressions Matter.</small>
+        </span>
+      </a>
 
-<section>
-<h2>Our Services</h2>
-<div class="grid">
-<div class="card">Office Cleaning</div>
-<div class="card">Dealership Cleaning</div>
-<div class="card">Restroom Sanitizing</div>
-<div class="card">Floor Care</div>
-<div class="card">Break Room Cleaning</div>
-<div class="card">Custom Cleaning Plans</div>
-</div>
-</section>
+      <button class="menu-toggle" aria-expanded="false" aria-controls="site-nav">Menu</button>
 
-<section>
-<h2>Why Choose Us?</h2>
-<ul>
-<li>Reliable, detail-oriented service</li>
-<li>Flexible cleaning schedules</li>
-<li>Professional communication</li>
-<li>Serving businesses in Northwest Ohio and Southeast Michigan</li>
-</ul>
-</section>
+      <nav id="site-nav" class="site-nav" aria-label="Main navigation">
+        <a href="#services">Services</a>
+        <a href="#dealerships">Dealerships</a>
+        <a href="#process">How It Works</a>
+        <a href="#contact" class="button button-small">Request a Quote</a>
+      </nav>
+    </div>
+  </header>
 
-<section>
-<h2>Contact</h2>
-<p><strong>Email:</strong> firstimpressioncleanteam@gmail.com</p>
-<p><strong>Phone:</strong> (567) 218-1841</p>
-</section>
+  <main id="top">
+    <section class="hero">
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <p class="eyebrow">Commercial Cleaning • Toledo Area</p>
+          <h1>A cleaner facility creates a stronger first impression.</h1>
+          <p class="hero-lead">Professional cleaning plans for dealerships, offices, and commercial properties—built around your facility, schedule, and standards.</p>
+          <div class="button-row">
+            <a class="button" href="mailto:firstimpressioncleanteam@gmail.com?subject=Request%20for%20a%20Commercial%20Cleaning%20Quote">Request a Free Quote</a>
+            <a class="button button-outline" href="tel:+15672181841">Call (567) 218-1841</a>
+          </div>
+          <div class="hero-points">
+            <span>Customized cleaning plans</span>
+            <span>Professional communication</span>
+            <span>Flexible scheduling</span>
+          </div>
+        </div>
 
-<footer>
-© 2026 First Impression Cleaning Co.
-</footer>
+        <aside class="hero-card">
+          <p class="eyebrow">Service Focus</p>
+          <h2>Clean. Consistent. Professional.</h2>
+          <p>Reliable commercial cleaning designed to help your property look ready for customers, employees, and guests.</p>
+          <ul class="check-list">
+            <li>Dealership showrooms and customer areas</li>
+            <li>Office and professional spaces</li>
+            <li>Restrooms, floors, glass, and high-touch surfaces</li>
+            <li>Routine and customized cleaning schedules</li>
+          </ul>
+        </aside>
+      </div>
+    </section>
+
+    <section class="trust-strip">
+      <div class="container trust-grid">
+        <div><strong>Commercial Focus</strong><span>Built for business environments</span></div>
+        <div><strong>Detail-Oriented</strong><span>Customer-facing spaces matter</span></div>
+        <div><strong>Flexible Plans</strong><span>Service based on your needs</span></div>
+      </div>
+    </section>
+
+    <section class="section section-alt" id="services">
+      <div class="container">
+        <div class="section-heading">
+          <p class="eyebrow">Our Services</p>
+          <h2>Commercial cleaning that supports your business.</h2>
+          <p>Choose the services your facility needs, then build a schedule that fits your operation.</p>
+        </div>
+
+        <div class="card-grid">
+          <article class="service-card">
+            <div class="service-icon">🏢</div>
+            <h3>Office Cleaning</h3>
+            <p>Reception areas, workspaces, conference rooms, break rooms, and shared spaces.</p>
+          </article>
+
+          <article class="service-card">
+            <div class="service-icon">🚘</div>
+            <h3>Dealership Cleaning</h3>
+            <p>Showrooms, sales offices, waiting areas, service counters, restrooms, and glass.</p>
+          </article>
+
+          <article class="service-card">
+            <div class="service-icon">✨</div>
+            <h3>Floor Care</h3>
+            <p>Routine vacuuming, sweeping, mopping, and detail cleaning based on flooring type.</p>
+          </article>
+
+          <article class="service-card">
+            <div class="service-icon">🧼</div>
+            <h3>Restroom Sanitation</h3>
+            <p>Consistent cleaning and sanitation for high-use restroom spaces.</p>
+          </article>
+
+          <article class="service-card">
+            <div class="service-icon">🪟</div>
+            <h3>Interior Glass</h3>
+            <p>Entry glass, interior windows, mirrors, display surfaces, and partitions.</p>
+          </article>
+
+          <article class="service-card">
+            <div class="service-icon">📋</div>
+            <h3>Custom Cleaning Plans</h3>
+            <p>Cleaning frequency and scope tailored to your traffic, priorities, and property.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="dealerships">
+      <div class="container split-grid">
+        <div class="dealership-visual" aria-hidden="true">
+          <div class="showroom-sign">
+            <strong>Dealership-ready presentation</strong>
+            <span>Polished spaces for customers, staff, and guests.</span>
+          </div>
+          <div class="vehicle-shape"></div>
+        </div>
+
+        <div>
+          <p class="eyebrow">Dealership Specialty</p>
+          <h2>Keep the showroom experience as polished as the vehicles.</h2>
+          <p>Customers notice the details. We focus on the spaces that shape their first impression of your dealership.</p>
+
+          <div class="feature-list">
+            <div>
+              <span>✓</span>
+              <p><strong>Showrooms and sales floors</strong><br>Glass, floors, desks, displays, and customer-facing areas.</p>
+            </div>
+            <div>
+              <span>✓</span>
+              <p><strong>Waiting and lounge areas</strong><br>Comfortable, clean spaces for service customers and guests.</p>
+            </div>
+            <div>
+              <span>✓</span>
+              <p><strong>Restrooms and break areas</strong><br>Routine sanitation and detailed cleaning for high-use spaces.</p>
+            </div>
+          </div>
+
+          <a class="button" href="mailto:firstimpressioncleanteam@gmail.com?subject=Dealership%20Cleaning%20Walkthrough">Schedule a Walkthrough</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section standards">
+      <div class="container">
+        <div class="section-heading light">
+          <p class="eyebrow">Service Standards</p>
+          <h2>What you can expect from First Impression Cleaning Co.</h2>
+          <p>Professional service is more than cleaning—it is consistency, communication, and attention to detail.</p>
+        </div>
+
+        <div class="standards-grid">
+          <article>
+            <h3>Dependable Scheduling</h3>
+            <p>Service arranged around your business hours and operational needs.</p>
+          </article>
+          <article>
+            <h3>Detail-Focused Work</h3>
+            <p>Attention to visible areas, high-touch points, and customer-facing spaces.</p>
+          </article>
+          <article>
+            <h3>Clear Communication</h3>
+            <p>Professional follow-up and a straightforward process from quote to service.</p>
+          </article>
+          <article>
+            <h3>Customized Plans</h3>
+            <p>A cleaning scope tailored to your building, traffic, and priorities.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="process">
+      <div class="container">
+        <div class="section-heading">
+          <p class="eyebrow">How It Works</p>
+          <h2>A simple path to a cleaner facility.</h2>
+        </div>
+
+        <div class="process-grid">
+          <article>
+            <span>01</span>
+            <h3>Schedule a walkthrough</h3>
+            <p>We review the facility, discuss priorities, and identify the services you need.</p>
+          </article>
+          <article>
+            <span>02</span>
+            <h3>Receive a tailored proposal</h3>
+            <p>You receive a clear cleaning scope and pricing based on your property and schedule.</p>
+          </article>
+          <article>
+            <span>03</span>
+            <h3>Begin service</h3>
+            <p>We follow the agreed plan and keep communication straightforward from the start.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section contact-section" id="contact">
+      <div class="container contact-card">
+        <div>
+          <p class="eyebrow">Request a Quote</p>
+          <h2>Ready to improve your facility’s first impression?</h2>
+          <p>Contact First Impression Cleaning Co. to schedule a walkthrough and discuss a customized commercial cleaning plan.</p>
+          <div class="button-row">
+            <a class="button" href="mailto:firstimpressioncleanteam@gmail.com?subject=Request%20for%20a%20Commercial%20Cleaning%20Quote">Email for a Quote</a>
+            <a class="button button-outline dark-outline" href="tel:+15672181841">Call Now</a>
+          </div>
+        </div>
+
+        <div class="contact-details">
+          <a href="tel:+15672181841"><span>☎</span>(567) 218-1841</a>
+          <a href="mailto:firstimpressioncleanteam@gmail.com"><span>✉</span>firstimpressioncleanteam@gmail.com</a>
+          <p><span>📍</span>Toledo, Ohio and surrounding areas</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container footer-wrap">
+      <div>
+        <strong>First Impression Cleaning Co.</strong>
+        <p>Because First Impressions Matter.</p>
+      </div>
+      <p>© 2026 First Impression Cleaning Co. All rights reserved.</p>
+    </div>
+  </footer>
 </body>
 </html>
