@@ -641,3 +641,55 @@ footer {
   .industry-card { min-height: auto; }
   .trust-items { gap: 10px; }
 }
+
+
+/* ===== Clean professional icon upgrade ===== */
+.icon-badge,
+.service-icon {
+  color: #126fd1;
+}
+.icon-badge svg,
+.service-icon svg {
+  width: 34px;
+  height: 34px;
+  display: block;
+}
+.service-icon {
+  width: 58px !important;
+  height: 58px !important;
+  display: grid !important;
+  place-items: center;
+  border-radius: 17px;
+  background: linear-gradient(145deg, #eef7ff, #dceeff) !important;
+  border: 1px solid #d3e8ff;
+  box-shadow: 0 10px 24px rgba(20,116,212,.10);
+  margin-bottom: 22px !important;
+}
+.industry-card {
+  border-top: 4px solid transparent;
+  background:
+    linear-gradient(#fff,#fff) padding-box,
+    linear-gradient(90deg,#1474d4,#79b9f4) border-box;
+}
+.industry-card:hover .icon-badge,
+.services-grid .card:hover .service-icon {
+  transform: translateY(-2px) scale(1.04);
+}
+.icon-badge,
+.service-icon {
+  transition: transform .2s ease, box-shadow .2s ease;
+}
+.services-grid .card {
+  position: relative;
+  overflow: hidden;
+}
+.services-grid .card::after {
+  content: "";
+  position: absolute;
+  width: 120px;
+  height: 120px;
+  right: -62px;
+  top: -62px;
+  border-radius: 50%;
+  background: rgba(20,116,212,.055);
+}
