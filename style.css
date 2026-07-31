@@ -141,7 +141,7 @@ a { color: inherit; }
   align-items: center;
   background:
     linear-gradient(90deg, rgba(4,31,76,.94) 0%, rgba(6,42,99,.76) 42%, rgba(20,116,212,.20) 76%, rgba(20,116,212,.10) 100%),
-    url('hero-office.png') center/cover no-repeat;
+    url('office-hero-final.png') center/cover no-repeat;
 }
 .hero-video {
   position: absolute;
@@ -364,3 +364,6 @@ footer p:last-child { text-align: right; }
   .why, .process { padding: 30px 24px; }
   .form-row { grid-template-columns: 1fr; gap: 0; }
 }
+
+/* Final hero-image safeguard */
+.hero-video { display: none !important; }
